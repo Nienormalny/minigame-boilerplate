@@ -1,0 +1,43 @@
+@import './colors.scss';
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $body-background;
+    width: 100vw;
+    height: 100vh;
+}
+#app {
+    width: 414px;
+    height: 768px;
+    background: $app-background;
+    border-radius: 10px;
+    box-shadow: 3px 3px 45px 1px black;
+    overflow: hidden;
+    position: relative;
+    #game-container {
+        display: block;
+        height: calc(100% - 40px);
+    }
+}
+#footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+    padding: 5px 0;
+    background-color: $footer-background;
+    position: absolute;
+    bottom: 0;
+    a {
+        color: $light-font-color;
+        transition: color 0.3s ease;
+        &:hover {
+            color: $hover-font-color;
+        }
+    }
+}

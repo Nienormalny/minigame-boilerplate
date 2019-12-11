@@ -1,0 +1,11 @@
+$dark-gradiend: radial-gradient(circle, rgba(79,79,79,1) 0%, rgba(20,20,20,1) 100%);
+$light-gradiend: radial-gradient(circle, rgba(245,245,245,1) 0%, rgba(228,228,228,1) 100%);
+$dark-gray: #363636;
+$white: white;
+$light-blue: rgb(42, 152, 255);
+
+$body-background: $dark-gradiend;
+$app-background: $light-gradiend;
+$footer-background: $dark-gray;
+$light-font-color: $white;
+$hover-font-color: $light-blue;
