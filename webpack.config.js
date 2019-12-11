@@ -8,6 +8,7 @@ PLUGINS = [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
         title: "My minigame boilerplate",
+        favicon: './favicon.ico',
         inject: true,
         chunks: ['settings', 'app'],
         filename: 'index.html',
@@ -16,7 +17,7 @@ PLUGINS = [
             description: 'My minigame boilerplate description',
             robots: 'index, follow',
             keywords: 'my, minigame, boilerplate, keywords',
-            copyright: 'Nienormalny'
+            copyright: 'Nienormalny 2019'
         }
     })
 ];
@@ -27,7 +28,7 @@ module.exports = {
             new TerserPlugin({
             terserOptions: {
                 compress: {
-                drop_console: true,
+                    drop_console: true,
                 },
             },
             }),
